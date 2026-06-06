@@ -9,6 +9,7 @@ const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN,
 });
 
+// Review depth configurations
 const REVIEW_PROMPTS = {
   basic: `You are a code reviewer. Review this pull request diff and identify only critical bugs and security issues.`,
   standard: `You are an expert code reviewer with deep knowledge of software engineering best practices. 
